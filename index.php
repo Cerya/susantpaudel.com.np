@@ -45,10 +45,11 @@
             <div class="row">
                 <div id="seeds" class="col-sm-9 col-xs-12">
                     <?php
-                    $ch = curl_init();
-                    curl_setopt($ch, CURLOPT_URL, 'http://yts.re/api/list.json?quality=720p&limit=42&sort=seeds');
-                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                    $data = curl_exec($ch);
+                    // $ch = curl_init();
+                    // curl_setopt($ch, CURLOPT_URL, 'http://yts.re/api/list.json?quality=720p&limit=42&sort=seeds');
+                    // curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                    // $data = curl_exec($ch);
+                    $data = file_get_contents('http://yts.re/api/list.json?quality=720p&limit=42&sort=seeds');
                     $array = json_decode($data, true);
                     /* echo '<pre>';
                       print_r ($array);
@@ -133,12 +134,11 @@
                     <h1 style="text-align:center" class="media-heading">Upcoming Movies</h1><hr/>
 
                     <?php
-                    $url = 'http://yts.re/api/upcoming.json';
-
-                    $ch1 = curl_init();
-                    curl_setopt($ch1, CURLOPT_URL, $url);
-                    curl_setopt($ch1, CURLOPT_RETURNTRANSFER, 1);
-                    $data1 = curl_exec($ch1);
+                    // $ch = curl_init();
+                    // curl_setopt($ch, CURLOPT_URL, 'http://yts.re/api/list.json?quality=720p&limit=42&sort=seeds');
+                    // curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                    // $data = curl_exec($ch);
+                    $data1 = file_get_contents('http://yts.re/api/list.json?quality=720p&limit=42&sort=seeds');
                     $array1 = json_decode($data1, true);
                     //echo '<pre>';
                     //print_r ($array1);
