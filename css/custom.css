@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+#list div{
+	margin-bottom:10px;
+}
+span{
+	font-weight:bold;
+	color:#000000;
+}
+.media-body p, span{
+	
+	font-size:11px;
+}
+.media-heading{
+	font:17px 'Yanone Kaffeesatz';
+	font-weight:bold;
+}
+
+body{
+	background: radial-gradient(#FFFFFF , #D7ECFC);
+}
+#footer{
+	background:url(../img/footer.png) repeat-x ;
+	height:100px;
+	font:16px 'Anton';
+	color:#FFFFF;
+	text-align:right;
+}
