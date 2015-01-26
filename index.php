@@ -21,7 +21,7 @@
         <meta property="og:url" content="http://susantpaudel.com.np/" />
 
 
-        <title>Quality Movie- Home</title>
+        <title>Quality Movie :: Home</title>
 
         <!-- Bootstrap -->
 
